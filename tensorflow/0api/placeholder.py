@@ -8,8 +8,8 @@
 import tensorflow as tf
 import numpy as np
 
-x = tf.placeholder(tf.float32,[4,4])
-y = tf.matmul(x,x)
+x = tf.placeholder(tf.float16, [None, 3])
+y = tf.matmul(x, x)
 with tf.Session() as sess:
-    rand_array = np.random.rand(4,4)
-    print(sess.run(y,feed_dict={x:rand_array}))
+    rnd = np.random.rand(3, 3)
+    print(sess.run(y, feed_dict={x: rnd}))
