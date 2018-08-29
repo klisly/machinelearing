@@ -9,7 +9,7 @@ import tensorflow as tf
 import numpy as np
 
 a = tf.constant([[1.0, 2.0],[1.0, 2.0],[1.0, 2.0]])
-b = tf.constant([2.0,1.0])
+b = tf.constant([2.0,2.0])
 c = tf.constant([1.0])
 sess = tf.Session()
 print (sess.run(tf.nn.bias_add(a, b)))
