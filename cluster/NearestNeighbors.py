@@ -6,6 +6,7 @@
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
+from sklearn.feature_extraction.text import  CountVectorizer
 
 # !/user/bin/env python
 # -*- coding: utf-8 -*-
@@ -40,4 +41,4 @@ class arithmetic():
 
 
 arith = arithmetic()
-print arith.levenshtein('GUMBOsdafsadfdsafsafsadfasfadsfasdfasdfs', 'GAMBOL00000000000dfasfasfdafsafasfasdfdsa')
+print(arith.levenshtein('GUMBOsdafsadfdsafsafsadfasfadsfasdfasdfs', 'GAMBOL00000000000dfasfasfdafsafasfasdfdsa'))

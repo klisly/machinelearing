@@ -14,7 +14,7 @@ import argparse
 import tempfile
 import sys
 
-import mnist_model
+from . import mnist_model
 from PIL import Image, ImageFilter
 
 
