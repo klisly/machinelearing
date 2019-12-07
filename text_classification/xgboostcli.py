@@ -12,7 +12,6 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
-
 # 读取训练集
 def readtrain(file):
     with open(file, "r") as readf:
