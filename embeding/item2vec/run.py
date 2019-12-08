@@ -12,7 +12,7 @@ import os
 import shutil
 import pandas as pd
 from process import ItemNameProcessor
-from item2vec import Options, Item2Vec
+from embeding.item2vec import Options, Item2Vec
 import tensorflow as tf
 from tensorflow.contrib.tensorboard.plugins import projector
 
