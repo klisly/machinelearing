@@ -24,3 +24,7 @@ def mas(true, pred):
     return np.sum(np.abs(true - pred))
 
 from sklearn.metrics import classification_report
+
+from gensim import corpora
+from gensim.models import LdaModel
+from gensim.corpora import Dictionary
